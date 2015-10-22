@@ -38,23 +38,23 @@ Many of these objects are used in both requests and responses. Some of the objec
 as child elements of other objects.
 
 ### PayLinks
-* [Create a PayLink]()
-* [Update a PayLink]()
-* [Retrieve a PayLink]()
-* [Retrieve PayLinks]()
-* [Retrieve a PayLink URL]()
-* [Remove a PayLink]()
-* [Cancel a PayLink]()
+* [Create a PayLink](https://github.com/PayLink/APIs/blob/master/Sections/PayLinks.md#create-a-paylink)
+* [Update a PayLink](https://github.com/PayLink/APIs/blob/master/Sections/PayLinks.md#update-a-paylink)
+* [Retrieve a PayLink](https://github.com/PayLink/APIs/blob/master/Sections/PayLinks.md#retrieve-a-paylink)
+* [Retrieve PayLinks](https://github.com/PayLink/APIs/blob/master/Sections/PayLinks.md#retrieve-paylinks)
+* [Retrieve a PayLink URL](https://github.com/PayLink/APIs/blob/master/Sections/PayLinks.md#retrieve-a-paylink-url)
+* [Remove a PayLink](https://github.com/PayLink/APIs/blob/master/Sections/PayLinks.md#remove-a-paylink)
+* [Cancel a PayLink](https://github.com/PayLink/APIs/blob/master/Sections/PayLinks.md#cancel-a-paylink)
 
 ### WalletLinks
-* [Create a WalletLink]()
-* [Retrieve a WalletLink URL]()
-* [Cancel a WalletLink]()
+* [Create a WalletLink](https://github.com/PayLink/APIs/blob/master/Sections/WalletLinks.md#create-a-walletlink)
+* [Retrieve a WalletLink URL](https://github.com/PayLink/APIs/blob/master/Sections/WalletLinks.md#retrieve-a-walletlink-url)
+* [Cancel a WalletLink](https://github.com/PayLink/APIs/blob/master/Sections/WalletLinks.md#cancel-a-walletlink)
 
 ### Notifications
-* [Resend PayLink Notification Email]()
-* [Resend PayLink Notification SMS]()
-* [Retrieve SMS Notification Templates]()
+* [Resend PayLink Notification Email](https://github.com/PayLink/APIs/blob/master/Sections/Notifications.md#resend-paylink-notifiation-email)
+* [Resend PayLink Notification SMS](https://github.com/PayLink/APIs/blob/master/Sections/Notifications.md#resend-paylink-notification-sms)
+* [Retrieve SMS Notification Templates](https://github.com/PayLink/APIs/blob/master/Sections/Notifications.md#retrieve-sms-notification-templates)
 
 
 Help us make it better
