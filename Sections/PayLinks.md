@@ -11,16 +11,58 @@ Create a PayLink
 ###### Request
 <pre>
 {
+  <b><i>"SetupId": "PFP"</i></b>,
+  <b>"Currency": "USD"</b>,
+  <b>"Amount": 49.99</b>,
+  <b>"DocumentAmount": 49.99</b>,
+  "TaxAmount": 0,
+  "TradeDiscount": 0,
+  "Freight": 0,
+  "MiscAmount": 0,
+  <b>"CustomerNumber": "John Doe Ltd"</b>,
+  "CustomerName": null,
+  <b>"IsMultipleInvoice": false</b>,
+  "DocumentNumber": null,
+  "TransactionType": "Sale",
+  <b>"DocDate": "2015-10-28T00:00:00"</b>,
+  "DueDate": "2015-10-31T00:00:00",
+  "DocType": 0,
+  "PaymentTerm": null,
+  "SourceOfDocument": 0,
+  "BatchSource": 0,
+  "BatchNo": null,
+  "MerchantEmail": null,
+  "ReturnUrl": null,
+  "Tax": null,
+  "ShippingAddress": null,
+  "BillingAddress": null,
+  "Items": null,
+  "UserDefinedFields": null,
+  "PostDataType": "PaymentLine",
+  <b><i>"Payment": {
+    "CreditCardGateway": "PFP",
+    "ECheckGateway": "",
+    "AcceptType": 1
+  }</i></b>,
+  <b>"Notification": {
+    "Type": "All"
+  }</b>,
+  <b>"NotificationEmail": "John.Doe@payfabric.com"</b>,
+  <b>"NotificationPhone": "123456789"</b>
 }
 </pre>
 
-Please note that **bold** fields are required fields, and all others are optional. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Object#paylink).
+Please note that **bold** fields are required fields, the **Payment** object **or** **SetupId** field must be supplied, and all others are optional. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Object#paylink).
 
 ###### Response
 <pre>
 {
+  "Id": "h3GSpCZKsEWNxFv6T_y_Gw",
+  "TransactionKey": "151028003864"
 }
 </pre>
+
+The response will include the full document object, see the [Retrieve a PayLink](https://github.com/PayLink/APIs/edit/master/Sections/PayLinks.md#retrieve-a-paylink) endpoint for more information.
 
 Update a PayLink
 ----------------
@@ -34,7 +76,7 @@ Update a PayLink
 }
 </pre>
 
-Please note that the **Id** field is the only required field for an update. Only the fields that need updating should be included, see the **Create a PayLink** endpoint for more information.
+Please note that the **Id** field is the only required field for an update. Only the fields that need updating should be included, see the [Create a PayLink](https://github.com/PayLink/APIs/edit/master/Sections/PayLinks.md#create-a-paylink) endpoint for more information.
 
 ###### Response
 <pre>
