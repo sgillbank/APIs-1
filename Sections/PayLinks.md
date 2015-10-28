@@ -52,7 +52,7 @@ Create a PayLink
 }
 </pre>
 
-Please note that **bold** fields are required fields, the **Payment** object **or** **SetupId** field must be supplied, and all others are optional. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Object#paylink).
+Please note that **bold** fields are required fields, the **Payment** object *or* **SetupId** field must be supplied, and all others are optional. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Object#paylink).
 
 ###### Response
 <pre>
