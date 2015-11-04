@@ -62,28 +62,19 @@ Please note that **bold** fields are required fields, the **Payment** object *or
 }
 </pre>
 
-The response will include the full document object, see the [Retrieve a PayLink](https://github.com/PayLink/APIs/edit/master/Sections/PayLinks.md#retrieve-a-paylink) endpoint for more information.
+The response will include the full document object, see the [Retrieve a PayLink](#retrieve-a-paylink) endpoint for more information.
 
 Update a PayLink
 ----------------
 
-* `PATCH /api/document` will update a PayLink document with new information based on the request JSON payload
+* `PATCH /api/document/gwx9q6fqcEuagAJLA27CIA` will update the specified PayLink document with new information based on the request JSON payload
 
 ###### Request
-<pre>
-{
-    "Id": "AdFXqnNNf0GDNwiO5UE_fw"
-}
-</pre>
-
-Please note that the **Id** field is the only required field for an update. Only the fields that need updating should be included, see the [Create a PayLink](https://github.com/PayLink/APIs/edit/master/Sections/PayLinks.md#create-a-paylink) endpoint for more information.
+A JSON object using only the fields that need updating should be included, see the [Create a PayLink](#create-a-paylink) endpoint for more information.
 
 ###### Response
-<pre>
-{
-  "Result": "True"
-}
-</pre>
+A successful `PATCH` will result in a HTTP 200 OK Response.
+A failed `PATCH` will result in a HTTP 400 Bad Request Response with the message providing the failed reason.
 
 Retrieve a PayLink
 ------------------
@@ -93,6 +84,81 @@ Retrieve a PayLink
 ###### Response
 <pre>
 {
+  "Id": "gwx9q6fqcEuagAJLA27CIA",
+  "Device": "33665f05-8346-4809-e0f1-01050545236f",
+  "SetupId": null,
+  "Currency": "USD",
+  "Amount": 49.99,
+  "DocumentAmount": 49.99,
+  "TaxAmount": 0,
+  "TradeDiscount": 0,
+  "Freight": 0,
+  "MiscAmount": 0,
+  "CustomerNumber": "John Doe Ltd",
+  "CustomerName": null,
+  "IsMultipleInvoice": false,
+  "DocumentNumber": "STDINV0001",
+  "TransactionType": "Sale",
+  "DocDate": "2015-11-04T09:20:58.337",
+  "DueDate": "1900-01-01T00:00:00",
+  "DocType": 0,
+  "PaymentTerm": "Net 30",
+  "SourceOfDocument": 0,
+  "BatchSource": 0,
+  "BatchNo": null,
+  "MerchantEmail": null,
+  "ReturnUrl": null,
+  "Status": 1,
+  "Tax": null,
+  "ShippingAddress": null,
+  "BillingAddress": {
+    "Email": null,
+    "Address1": null,
+    "Address2": null,
+    "Address3": null,
+    "City": null,
+    "State": null,
+    "Zip": null,
+    "Country": null,
+    "Phone1": null,
+    "Phone2": null,
+    "Phone3": null
+  },
+  "Items": null,
+  "UserDefinedFields": [
+    {
+      "Key": "SubTotal",
+      "Value": "49.99"
+    },
+    {
+      "Key": "InvoiceNumber",
+      "Value": "STDINV0001"
+    },
+    {
+      "Key": "CustomerName",
+      "Value": "John Doe Ltd"
+    }
+  ],
+  "PostDataType": "PaymentLine",
+  "TransactionKey": "151104003878",
+  "PaidOn": "1900-01-01T00:00:00",
+  "LastProcessDate": "1900-01-01T00:00:00",
+  "Message": "",
+  "CustomeMessage": null,
+  "Payment": {
+    "CreditCardGateway": "PFP",
+    "ECheckGateway": "",
+    "AcceptType": 1
+  },
+  "Notification": {
+    "Type": "Email",
+    "SMSTemplate": null,
+    "ResponseStatus": null,
+    "ResponseMessage": null
+  },
+  "NotificationEmail": "John.Doe@PayFabric.com",
+  "NotificationPhone": "",
+  "OriginalTender": null
 }
 </pre>
 
@@ -119,19 +185,172 @@ Retrieve PayLinks
 
 ###### Response
 <pre>
-{
-}
+[
+  {
+    "Id": "gwx9q6fqcEuagAJLA27CIA",
+    "Device": "33665f05-8346-4809-e0f1-01050545236f",
+    "SetupId": null,
+    "Currency": "USD",
+    "Amount": 49.99,
+    "DocumentAmount": 49.99,
+    "TaxAmount": 0,
+    "TradeDiscount": 0,
+    "Freight": 0,
+    "MiscAmount": 0,
+    "CustomerNumber": "John Doe Ltd",
+    "CustomerName": null,
+    "IsMultipleInvoice": false,
+    "DocumentNumber": "STDINV0001",
+    "TransactionType": "Sale",
+    "DocDate": "2015-11-04T09:20:58.337",
+    "DueDate": "1900-01-01T00:00:00",
+    "DocType": 0,
+    "PaymentTerm": "Net 30",
+    "SourceOfDocument": 0,
+    "BatchSource": 0,
+    "BatchNo": null,
+    "MerchantEmail": null,
+    "ReturnUrl": null,
+    "Status": 1,
+    "Tax": null,
+    "ShippingAddress": null,
+    "BillingAddress": {
+      "Email": null,
+      "Address1": null,
+      "Address2": null,
+      "Address3": null,
+      "City": null,
+      "State": null,
+      "Zip": null,
+      "Country": null,
+      "Phone1": null,
+      "Phone2": null,
+      "Phone3": null
+    },
+    "Items": null,
+    "UserDefinedFields": [
+      {
+        "Key": "SubTotal",
+        "Value": "49.99"
+      },
+      {
+        "Key": "InvoiceNumber",
+        "Value": "STDINV0001"
+      },
+      {
+        "Key": "CustomerName",
+        "Value": "John Doe Ltd"
+      }
+    ],
+    "PostDataType": "PaymentLine",
+    "TransactionKey": "151104003878",
+    "PaidOn": "1900-01-01T00:00:00",
+    "LastProcessDate": "1900-01-01T00:00:00",
+    "Message": "",
+    "CustomeMessage": null,
+    "Payment": {
+      "CreditCardGateway": "PFP",
+      "ECheckGateway": "",
+      "AcceptType": 1
+    },
+    "Notification": {
+      "Type": "Email",
+      "SMSTemplate": null,
+      "ResponseStatus": null,
+      "ResponseMessage": null
+    },
+    "NotificationEmail": "John.Doe@PayFabric.com",
+    "NotificationPhone": "",
+    "OriginalTender": null
+  },
+  {
+    "Id": "gwx9q6fqcEuagAJLA27CIB",
+    "Device": "33665f05-8346-4809-e0f1-01050545236f",
+    "SetupId": null,
+    "Currency": "USD",
+    "Amount": 49.99,
+    "DocumentAmount": 49.99,
+    "TaxAmount": 0,
+    "TradeDiscount": 0,
+    "Freight": 0,
+    "MiscAmount": 0,
+    "CustomerNumber": "John Doe Ltd",
+    "CustomerName": null,
+    "IsMultipleInvoice": false,
+    "DocumentNumber": "STDINV0002",
+    "TransactionType": "Sale",
+    "DocDate": "2015-11-04T09:20:58.337",
+    "DueDate": "1900-01-01T00:00:00",
+    "DocType": 0,
+    "PaymentTerm": "Net 30",
+    "SourceOfDocument": 0,
+    "BatchSource": 0,
+    "BatchNo": null,
+    "MerchantEmail": null,
+    "ReturnUrl": null,
+    "Status": 1,
+    "Tax": null,
+    "ShippingAddress": null,
+    "BillingAddress": {
+      "Email": null,
+      "Address1": null,
+      "Address2": null,
+      "Address3": null,
+      "City": null,
+      "State": null,
+      "Zip": null,
+      "Country": null,
+      "Phone1": null,
+      "Phone2": null,
+      "Phone3": null
+    },
+    "Items": null,
+    "UserDefinedFields": [
+      {
+        "Key": "SubTotal",
+        "Value": "49.99"
+      },
+      {
+        "Key": "InvoiceNumber",
+        "Value": "STDINV0002"
+      },
+      {
+        "Key": "CustomerName",
+        "Value": "John Doe Ltd"
+      }
+    ],
+    "PostDataType": "PaymentLine",
+    "TransactionKey": "151104003879",
+    "PaidOn": "1900-01-01T00:00:00",
+    "LastProcessDate": "1900-01-01T00:00:00",
+    "Message": "",
+    "CustomeMessage": null,
+    "Payment": {
+      "CreditCardGateway": "PFP",
+      "ECheckGateway": "",
+      "AcceptType": 1
+    },
+    "Notification": {
+      "Type": "Email",
+      "SMSTemplate": null,
+      "ResponseStatus": null,
+      "ResponseMessage": null
+    },
+    "NotificationEmail": "John.Doe@PayFabric.com",
+    "NotificationPhone": "",
+    "OriginalTender": null
+  }
+]
 </pre>
 
 Retrieve a PayLink URL
 ----------------------
 
-* `GET /api/document/retrieve/AdFXqnNNf0GDNwiO5UE_fw/link` will return the specified PayLink documents' unique URL
+* `GET /api/document/retrieve/gwx9q6fqcEuagAJLA27CIA/link` will return the specified PayLink documents' unique URL
 
 ###### Response
 <pre>
-{
-}
+"https://sandbox.payfabric.com/v2/paylink/gwx9q6fqcEuagAJLA27CIA"
 </pre>
 
 Remove a PayLink
@@ -140,10 +359,10 @@ Remove a PayLink
 * `DELETE /api/document/AdFXqnNNf0GDNwiO5UE_fw` will remove the specified PayLink document permanently
 
 ###### Response
-<pre>
-{
-}
-</pre>
+A successful `DELETE` will result in a HTTP 200 OK Response.
+A failed `DELETE` may result in a HTTP 404 Not Found Response if the specified document does not exist or the Device ID used for the *Security Token* does not match.
+A failed `DELETE` may result in a HTTP 405 Method Not Allowed Response if the specified document has already been cancelled or paid.
+
 
 Cancel a PayLink
 ----------------
@@ -151,8 +370,6 @@ Cancel a PayLink
 * `POST /api/document/AdFXqnNNf0GDNwiO5UE_fw/cancel` will cancel a PayLink document
 
 ###### Response
-<pre>
-{
-  "Result": "True"
-}
-</pre>
+A successful `POST` will result in a HTTP 200 OK Response.
+A failed `POST` may result in a HTTP 404 Not Found Response if the specified document does not exist or the Device ID used for the *Security Token* does not match.
+A failed `POST` may result in a HTTP 405 Method Not Allowed Response if the specified document has already been cancelled or paid.
