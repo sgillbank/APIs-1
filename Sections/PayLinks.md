@@ -1,7 +1,7 @@
 PayLinks
 ========
 
-The PayLinks API is used for creating, updating and retrieving PayLinks. Please note that all requests require API authentication by *Security Token*, see our [guide](https://github.com/ShaunSharples/APIs/blob/ShaunSharples-patch-1/Sections/Authentication.md#security-token) on how to authenticate.
+The PayLinks API is used for creating, updating and retrieving PayLinks. Please note that all requests require API authentication by PayFabric *Security Token*, see our [guide](https://github.com/PayFabric/APIs/blob/v2/Sections/Authentication.md#security-token) on how to authenticate.
 
 Create a PayLink
 ----------------
@@ -52,7 +52,7 @@ Create a PayLink
 }
 </pre>
 
-Please note that **bold** fields are required fields, the **Payment** object *or* **SetupId** field must be supplied, and all others are optional. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Object#paylink).
+Please note that **bold** fields are required fields, the **Payment** object *or* **SetupId** field must be supplied, and all others are optional. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Objects#paylink-document).
 
 ###### Response
 <pre>
