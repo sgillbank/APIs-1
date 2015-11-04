@@ -21,19 +21,19 @@ Authentication
 --------------
 PayLink clients require a PayFabric *Security Token* to authenticate with APIs.
 
-We have a [detailed guide](https://github.com/ShaunSharples/APIs/blob/ShaunSharples-patch-1/Sections/Authentication.md#security-token) in our PayFabric documentation for creating a new *Security Token*.
+We have a [detailed guide](https://github.com/PayFabric/APIs/blob/v2/Sections/Authentication.md#security-token) in our PayFabric documentation for creating a new *Security Token*.
 
 
 Handling Exceptions
 -------------------
 PayLink uses HTTP response codes to indicate the status of requests. 
 
-We have a [guide](https://github.com/ShaunSharples/APIs/blob/ShaunSharples-patch-1/Sections/Errors.md) detailing the meanings of the most common response codes that you will encounter. 
+We have a [guide](https://github.com/PayLink/APIs/tree/master/Sections/Errors.md) detailing the meanings of the most common response codes that you will encounter. 
 
 
 API Documentation
 -----------------
-PayLink sends and receives payloads as structured [JSON Objects](https://github.com/PayLink/APIs/wiki/API-Object). 
+PayLink sends and receives payloads as structured [JSON Objects](https://github.com/PayLink/APIs/wiki/API-Objects). 
 Many of these objects are used in both requests and responses. Some of the objects (like Address or Cardholder) are embedded
 as child elements of other objects.
 
