@@ -64,6 +64,84 @@ Please note that **bold** fields are required fields, the **Payment** object *or
 
 The response will include the full document object, see the [Retrieve a PayLink](#retrieve-a-paylink) endpoint for more information.
 
+Create a Multiple Invoice PayLink
+---------------------------------
+
+* `POST /api/document` will create and save a PayLink document to the PayLink server based on the request JSON payload, the trick to creating a PayLink as a multiple invoice, is using the **IsMultipleInvoice** and **Items** fields
+
+###### Request
+<pre>
+{
+  <b><i>"SetupId": "PFP"</i></b>,
+  <b>"Currency": "USD"</b>,
+  <b>"Amount": 49.99</b>,
+  <b>"DocumentAmount": 49.99</b>,
+  "TaxAmount": 0,
+  "TradeDiscount": 0,
+  "Freight": 0,
+  "MiscAmount": 0,
+  <b>"CustomerNumber": "John Doe Ltd"</b>,
+  "CustomerName": null,
+  <b>"IsMultipleInvoice": true</b>,
+  "DocumentNumber": null,
+  "TransactionType": "Sale",
+  <b>"DocDate": "2015-10-28T00:00:00"</b>,
+  "DueDate": "2015-10-31T00:00:00",
+  "DocType": 0,
+  "PaymentTerm": null,
+  "SourceOfDocument": 0,
+  "BatchSource": 0,
+  "BatchNo": null,
+  "MerchantEmail": null,
+  "ReturnUrl": null,
+  "Tax": null,
+  "ShippingAddress": null,
+  "BillingAddress": null,
+  <b>"Items": [
+    {
+      "ItemCode": "INV0001",
+      "AppliedAmount": 20.00,
+      "DueDate": "2015-10-31"
+    },
+    {
+      "ItemCode": "INV0002",
+      "AppliedAmount": 20.00,
+      "DueDate": "2015-10-31"
+    }
+  ]</b>,
+  <b><i>"UserDefinedFields": [
+    {
+      "Key": "Surcharge",
+      "Value": "9.99"
+    }
+  ]</i></b>,
+  "PostDataType": "PaymentLine",
+  <b><i>"Payment": {
+    "CreditCardGateway": "PFP",
+    "ECheckGateway": "",
+    "AcceptType": 1
+  }</i></b>,
+  <b>"Notification": {
+    "Type": "All"
+  }</b>,
+  <b>"NotificationEmail": "John.Doe@payfabric.com"</b>,
+  <b>"NotificationPhone": "123456789"</b>
+}
+</pre>
+
+Please note that **bold** fields are required fields, the **Payment** object *or* **SetupId** field must be supplied, and all others are optional.  If you wish to apply a surcharge fee for multiple invoice payment, please use the **UserDefinedFields** field as shown in the example above. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Objects#paylink-document).
+
+###### Response
+<pre>
+{
+  "Id": "h3GSpCZKsEWNxFv6T_y_Gw",
+  "TransactionKey": "151028003864"
+}
+</pre>
+
+The response will include the full document object, see the [Retrieve a PayLink](#retrieve-a-paylink) endpoint for more information.
+
+
 Update a PayLink
 ----------------
 
