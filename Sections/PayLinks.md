@@ -39,6 +39,7 @@ Create a PayLink
   "Items": null,
   "UserDefinedFields": null,
   "PostDataType": "PaymentLine",
+  "Status": 0,
   <b><i>"Payment": {
     "CreditCardGateway": "PFP",
     "ECheckGateway": "",
@@ -52,7 +53,7 @@ Create a PayLink
 }
 </pre>
 
-Please note that **bold** fields are required fields, the **Payment** object *or* **SetupId** field must be supplied, and all others are optional. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Objects#paylink-document).
+Please note that **bold** fields are required fields, the **Payment** object *or* **SetupId** field must be supplied, and all others are optional. The **Status** field can be used to set the PayLink document status; specify 0 to save the document as a draft, specify 1 to save the document as an active document ready for payment. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Objects#paylink-document).
 
 ###### Response
 <pre>
@@ -116,6 +117,7 @@ Create a Multiple Invoice PayLink
     }
   ]</i></b>,
   "PostDataType": "PaymentLine",
+  "Status": 0,
   <b><i>"Payment": {
     "CreditCardGateway": "PFP",
     "ECheckGateway": "",
@@ -129,7 +131,7 @@ Create a Multiple Invoice PayLink
 }
 </pre>
 
-Please note that **bold** fields are required fields, the **Payment** object *or* **SetupId** field must be supplied, and all others are optional.  If you wish to apply a surcharge fee for multiple invoice payment, please use the **UserDefinedFields** field as shown in the example above. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Objects#paylink-document).
+Please note that **bold** fields are required fields, the **Payment** object *or* **SetupId** field must be supplied, and all others are optional.  If you wish to apply a surcharge fee for multiple invoice payment, please use the **UserDefinedFields** field as shown in the example above. The **Status** field can be used to set the PayLink document status; specify 0 to save the document as a draft, specify 1 to save the document as an active document ready for payment. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Objects#paylink-document).
 
 ###### Response
 <pre>
@@ -148,7 +150,12 @@ Update a PayLink
 * `PATCH /api/document/gwx9q6fqcEuagAJLA27CIA` will update the specified PayLink document with new information based on the request JSON payload
 
 ###### Request
-A JSON object using only the fields that need updating should be included, see the [Create a PayLink](#create-a-paylink) endpoint for more information.
+A JSON object using only the fields that need updating should be included, see the [Create a PayLink](#create-a-paylink) endpoint for more information.  To release a draft PayLink document and make it active and ready to accept payments all you must do is supply the following JSON payload:
+<pre>
+{
+  "Status": 1
+}
+</pre>
 
 ###### Response
 A successful `PATCH` will result in a HTTP 200 OK Response.  
