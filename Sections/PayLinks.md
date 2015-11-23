@@ -55,6 +55,9 @@ Create a PayLink
 
 Please note that **bold** fields are required fields, the **Payment** object *or* **SetupId** field must be supplied, and all others are optional. The **Status** field can be used to set the PayLink document status; specify 0 to save the document as a draft, specify 1 to save the document as an active document ready for payment. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Objects#paylink-document).
 
+###### Related Reading
+* [Which Transaction Type to Use](https://github.com/PayFabric/Portal/wiki/Transaction-Types)
+
 ###### Response
 <pre>
 {
@@ -132,6 +135,9 @@ Create a Multiple Invoice PayLink
 </pre>
 
 Please note that **bold** fields are required fields, the **Payment** object *or* **SetupId** field must be supplied, and all others are optional.  If you wish to apply a surcharge fee for multiple invoice payment, please use the **UserDefinedFields** field as shown in the example above. The **Status** field can be used to set the PayLink document status; specify 0 to save the document as a draft, specify 1 to save the document as an active document ready for payment. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Objects#paylink-document).
+
+###### Related Reading
+* [Which Transaction Type to Use](https://github.com/PayFabric/Portal/wiki/Transaction-Types)
 
 ###### Response
 <pre>
