@@ -18,8 +18,8 @@ Create a WalletLink
   <b>"Notification":</b> {
     <b>"Type": "All"</b>
   },  
-  <b>"CustomerEmail": "John.Doe@nodus.com"</b>,
-  <b>"CustomerPhone": "123456789"</b>,
+  <b>"NotificationEmail": "John.Doe@nodus.com"</b>,
+  <b>"NotificationPhone": "123456789"</b>,
 }
 </pre>
 
@@ -33,8 +33,8 @@ Please note that **bold** fields are required fields and all others are optional
   "TenderType": 0,
   "CustomerNumber": "CUST0001",
   "CustomerName": "John Doe Ltd",
-  "CustomerEmail": "John.Doe@nodus.com",
-  "CustomerPhone": "123456789",
+  "NotificationEmail": "John.Doe@nodus.com",
+  "NotificationPhone": "123456789",
   "Message": "",
   "CustomeMessage": null,
   "Status": 0,
