@@ -45,9 +45,11 @@ Create a PayLink
     "ECheckGateway": "",
     "AcceptType": 1
   }</i></b>,
-  <b>"Notification": {
-    "Type": "All"
-  }</b>,
+  <b>"Notification":</b> {
+    <b>"Type": "All"</b>,
+    "EmailTemplate": null,
+    "SMSTemplate": null
+  },
   <b>"NotificationEmail": "John.Doe@payfabric.com"</b>,
   <b>"NotificationPhone": "123456789"</b>
 }
@@ -57,6 +59,7 @@ Please note that **bold** fields are required fields, the **Payment** object *or
 
 ###### Related Reading
 * [Which Transaction Type to Use](https://github.com/PayLink/Portal/wiki/Transaction-Types)
+* [How to Specify Email or SMS Template](https://github.com/PayLink/APIs/wiki/Email-and-SMS-Templates)
 
 ###### Response
 <pre>
@@ -126,9 +129,11 @@ Create a Multiple Invoice PayLink
     "ECheckGateway": "",
     "AcceptType": 1
   }</i></b>,
-  <b>"Notification": {
-    "Type": "All"
-  }</b>,
+  <b>"Notification":</b> {
+    <b>"Type": "All"</b>,
+    "EmailTemplate": null,
+    "SMSTemplate": null
+  },
   <b>"NotificationEmail": "John.Doe@payfabric.com"</b>,
   <b>"NotificationPhone": "123456789"</b>
 }
@@ -138,6 +143,8 @@ Please note that **bold** fields are required fields, the **Payment** object *or
 
 ###### Related Reading
 * [Which Transaction Type to Use](https://github.com/PayLink/Portal/wiki/Transaction-Types)
+* [How to Specify Email or SMS Template](https://github.com/PayLink/APIs/wiki/Email-and-SMS-Templates)
+
 
 ###### Response
 <pre>
@@ -243,6 +250,7 @@ Retrieve a PayLink
   },
   "Notification": {
     "Type": "Email",
+    "EmailTemplate": null,
     "SMSTemplate": null,
     "ResponseStatus": null,
     "ResponseMessage": null
@@ -346,6 +354,7 @@ Retrieve PayLinks
     },
     "Notification": {
       "Type": "Email",
+      "EmailTemplate": null,
       "SMSTemplate": null,
       "ResponseStatus": null,
       "ResponseMessage": null
@@ -423,6 +432,7 @@ Retrieve PayLinks
     },
     "Notification": {
       "Type": "Email",
+      "EmailTemplate": null,
       "SMSTemplate": null,
       "ResponseStatus": null,
       "ResponseMessage": null
