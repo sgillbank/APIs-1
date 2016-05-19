@@ -16,7 +16,9 @@ Create a WalletLink
   "CustomeMessage": "",
   "ReturnUrl": "",
   <b>"Notification":</b> {
-    <b>"Type": "All"</b>
+    <b>"Type": "All"</b>,
+    "EmailTemplate": null,
+    "SMSTemplate": null
   },  
   <b>"NotificationEmail": "John.Doe@nodus.com"</b>,
   <b>"NotificationPhone": "123456789"</b>,
@@ -24,6 +26,9 @@ Create a WalletLink
 </pre>
 
 Please note that **bold** fields are required fields and all others are optional. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Objects#walletlink-document).
+
+###### Related Reading
+* [How to Specify Email or SMS Template](https://github.com/PayLink/APIs/wiki/Email-and-SMS-Templates)
 
 ###### Response
 <pre>
@@ -40,6 +45,7 @@ Please note that **bold** fields are required fields and all others are optional
   "Status": 0,
   "Notification": {
     "Type": "All",
+    "EmailTemplate": null,
     "SMSTemplate": null,
     "ResponseStatus": "",
     "ResponseMessage": ""

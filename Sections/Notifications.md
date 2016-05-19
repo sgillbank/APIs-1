@@ -23,7 +23,34 @@ Resend PayLink Notification SMS
 A successful `POST` will result in a HTTP 200 OK Response.  
 A failed `POST` may result in a HTTP 400 Bad Request Response if the notification fails.  
 A failed `POST` may result in a HTTP 404 Not Found Response if the specified document does not exist or the Device ID used for the *Security Token* does not match.  
-A failed `POST` may result in a HTTP 405 Method Not Allowed Response if the specified document status is not 1.  
+A failed `POST` may result in a HTTP 405 Method Not Allowed Response if the specified document status is not 1. 
+
+Retrieve Email Notification Templates
+-----------------------------------
+
+* `GET api/notification/email/templates` will return all email notification templates configured in the PayLink portal
+
+###### Related Reading
+* [How to Create Notification Templates](https://github.com/PayLink/Portal/wiki)
+
+###### Response
+<pre>
+[
+  {
+    "Id": "f06e91f0-98b2-4fb6-a58d-ab5368a3cd4a",
+    "Name": "Standard",
+    "Subject": "Invoice",
+    "Contents": "Dear [[[Document.CustomerName]]], your invoice(s) for [[[Transaction.TransactionAmount]]] is now ready to view and pay at [[[Document.PayLinkURL]]]"
+  },
+  {
+    "Id": "33665f05-8346-4809-e0f1-01050545236f",
+    "Name": "Custom",
+    "Subject": "Invoice",
+    "Contents": "From [[[Profile.CompanyName]]]: Your invoice(s) for [[[Transaction.TransactionAmount]]] is now ready to view and pay at [[[Document.PayLinkURL]]].  If you think this is in error, please call us on [[[Profile.Phone]]]."
+  }
+]
+</pre>
+
 
 Retrieve SMS Notification Templates
 -----------------------------------
