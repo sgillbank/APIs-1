@@ -257,7 +257,158 @@ Retrieve a PayLink
   },
   "NotificationEmail": "John.Doe@PayFabric.com",
   "NotificationPhone": "",
-  "OriginalTender": null
+  "OriginalTender": null,
+  "PayFabricTransactionData": {
+    "Key": "151104003878",
+    "ReferenceKey": null,
+    "Customer": "John Doe Ltd",
+    "BatchNumber": "",
+    "SetupId": "PFP",
+    "MSO_EngineGUID": "00c2d66b-9b4e-4d63-b115-e6c5fc4e7430",
+    "Tender": "CreditCard",
+    "Type": "Sale",
+    "Currency": "USD",
+    "Amount": "49.99",
+    "ReqAuthCode": "",
+    "PayDate": "",
+    "TrxUserDefine1": "",
+    "TrxUserDefine2": "",
+    "TrxUserDefine3": "",
+    "TrxUserDefine4": "",
+    "Card": {
+      "ID": "00000000-0000-0000-0000-000000000000",
+      "Customer": "John Doe Ltd",
+      "Tender": "CreditCard",
+      "Account": "",
+      "CardName": null,
+      "ExpDate": "",
+      "CheckNumber": "",
+      "AccountType": "",
+      "Aba": "",
+      "Connector": "PayflowPro",
+      "GatewayToken": "",
+      "CVC": null,
+      "Identifier": "",
+      "IssueNumber": "",
+      "StartDate": "",
+      "GPAddressCode": "",
+      "UserDefine1": "",
+      "UserDefine2": "",
+      "UserDefine3": "",
+      "UserDefine4": "",
+      "CardHolder": {
+        "FirstName": "",
+        "MiddleName": "",
+        "LastName": "",
+        "DriverLicense": "",
+        "SSN": ""
+      },
+      "Billto": {
+        "Customer": "",
+        "ID": "00000000-0000-0000-0000-000000000000",
+        "Line1": "",
+        "Line2": "",
+        "Line3": "",
+        "State": "",
+        "City": "",
+        "Country": "",
+        "Zip": "",
+        "Email": "",
+        "Phone": "",
+        "ModifiedOn": "1/1/0001 12:00:00 AM"
+      },
+      "IsSaveCard": false,
+      "IsDefaultCard": false,
+      "IsLocked": false,
+      "ModifiedOn": "1/1/0001 12:00:00 AM"
+    },
+    "Shipto": {
+      "Customer": "",
+      "ID": "00000000-0000-0000-0000-000000000000",
+      "Line1": "",
+      "Line2": "",
+      "Line3": "",
+      "State": "",
+      "City": "",
+      "Country": "",
+      "Zip": "",
+      "Email": "",
+      "Phone": "",
+      "ModifiedOn": "1/1/0001 12:00:00 AM"
+    },
+    "TrxResponse": {
+      "TrxKey": "151104003878",
+      "Status": "UnProcess",
+      "OriginationID": "",
+      "RespTrxTag": "",
+      "AuthCode": "",
+      "ResultCode": "",
+      "Message": "",
+      "CVV2Response": "",
+      "AVSAddressResponse": "",
+      "AVSZipResponse": "",
+      "IAVSAddressResponse": "",
+      "TrxDate": null,
+      "TAXml": ""
+    },
+    "Document": {
+      "Head": [
+        {
+          "Name": "InvoiceNumber",
+          "Value": "STDINV0001"
+        }
+      ],
+      "Lines": [],
+      "UserDefined": [
+        {
+          "Name": "ERPDocumentNumber",
+          "Value": ""
+        },
+        {
+          "Name": "IsForScribe",
+          "Value": "0"
+        },
+        {
+          "Name": "PayLinkTradeDiscount",
+          "Value": "0"
+        },
+        {
+          "Name": "PayLinkFreightAmount",
+          "Value": "0"
+        },
+        {
+          "Name": "PayLinkMiscAmount",
+          "Value": "0"
+        },
+        {
+          "Name": "PayLinkIsMultipleInvoice",
+          "Value": "0"
+        },
+        {
+          "Name": "PayLinkBatchNumber",
+          "Value": ""
+        },
+        {
+          "Name": "PayLinkPostDataType",
+          "Value": "PaymentLine"
+        },
+        {
+          "Name": "PayLinkDocumentType",
+          "Value": "0"
+        },
+        {
+          "Name": "AppID",
+          "Value": "PayLink"
+        },
+        {
+          "Name": "PayLinkID",
+          "Value": "gwx9q6fqcEuagAJLA27CIA"
+        }
+      ]
+    },
+    "ModifiedOn": "5/16/2016 11:07:49 PM",
+    "ReferenceTrxs": []
+  }
 }
 </pre>
 
