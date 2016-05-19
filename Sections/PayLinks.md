@@ -182,7 +182,7 @@ Retrieve a PayLink
 ###### Response
 <pre>
 {
-  "Id": "gwx9q6fqcEuagAJLA27CIA",
+  "Id": "AdFXqnNNf0GDNwiO5UE_fw",
   "Device": "33665f05-8346-4809-e0f1-01050545236f",
   "SetupId": null,
   "Currency": "USD",
@@ -402,7 +402,7 @@ Retrieve a PayLink
         },
         {
           "Name": "PayLinkID",
-          "Value": "gwx9q6fqcEuagAJLA27CIA"
+          "Value": "AdFXqnNNf0GDNwiO5UE_fw"
         }
       ]
     },
