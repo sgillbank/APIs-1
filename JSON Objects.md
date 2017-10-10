@@ -150,7 +150,7 @@ The field object is used for custom user defined values.
 
 
 ## SMS Template
-The SMS Template object is a used to return information on created notification templates, this is used for retrieving available Ids for use in the [Notification Object](#Notification).
+The SMS Template object is a used to return information on created notification templates, this is used for retrieving available Ids for use in the [Notification Object](#notification).
 
 | Attribute | Data Type | Definition | Access |
 | :----------- | :--------- | :--------- | :--------- |
@@ -160,7 +160,7 @@ The SMS Template object is a used to return information on created notification 
 
 
 ## Email Template
-The Email Template object is a used to return information on created notification templates, this is used for retrieving available names for use in the [Notification Object](#Notification).
+The Email Template object is a used to return information on created notification templates, this is used for retrieving available names for use in the [Notification Object](#notification).
 
 | Attribute | Data Type | Definition | Access |
 | :----------- | :--------- | :--------- | :--------- |
