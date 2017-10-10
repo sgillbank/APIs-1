@@ -23,7 +23,7 @@ Authentication
 --------------
 PayLink clients require a PayFabric *Security Token* to authenticate with APIs.
 
-We have a [detailed guide](https://github.com/PayFabric/APIs/blob/v2/Sections/Authentication.md#security-token) in our PayFabric documentation for creating a new *Security Token*.
+We have a [detailed guide](Sections/Authentication.md#security-token) in our PayFabric documentation for creating a new *Security Token*.
 
 
 Handling Exceptions
@@ -35,7 +35,7 @@ We have a [guide](Sections/Errors.md) detailing the meanings of the most common 
 
 API Documentation
 -----------------
-PayLink sends and receives payloads as structured [JSON Objects](https://github.com/PayLink/APIs/blob/v2/JSON%20Objects.md). 
+PayLink sends and receives payloads as structured [JSON Objects](JSON%20Objects.md). 
 Many of these objects are used in both requests and responses. Some of the objects (like Address or Cardholder) are embedded
 as child elements of other objects.
 
