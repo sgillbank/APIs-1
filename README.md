@@ -12,7 +12,7 @@ Where do I start?
 
 Want to get started with PayLink API integration? Here's a quick check list:
 
-1. Register and then configure a PayLink account, check out the [Quick Start Guide](https://github.com/PayLink/Portal/wiki) to learn how.
+1. Register and then configure a PayLink account, check out the [Quick Start Guide](https://github.com/PayLink/Portal/blob/v2/Quick%20Start%20Guide.md) to learn how.
 2. Read up on how to [authenticate](#authentication) with our APIs. 
 3. Read up on how to [handle errors](#handling-exceptions) with our APIs.
 4. Browse the [API docs](#api-documentation) for the API you need to work with.
@@ -35,7 +35,7 @@ We have a [guide](Sections/Errors.md) detailing the meanings of the most common 
 
 API Documentation
 -----------------
-PayLink sends and receives payloads as structured [JSON Objects](https://github.com/PayLink/APIs/wiki/API-Objects). 
+PayLink sends and receives payloads as structured [JSON Objects](https://github.com/PayLink/APIs/blob/v2/JSON%20Objects.md). 
 Many of these objects are used in both requests and responses. Some of the objects (like Address or Cardholder) are embedded
 as child elements of other objects.
 
