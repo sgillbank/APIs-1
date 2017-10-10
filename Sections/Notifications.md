@@ -31,7 +31,7 @@ Retrieve Email Notification Templates
 * `GET api/notification/email/templates` will return all email notification templates configured in the PayLink portal
 
 ###### Related Reading
-* [How to Create Notification Templates](https://github.com/PayLink/Portal/blob/v2/Features.md#templates)
+* [How to Create Notification Templates](https://github.com/PayLink/Portal/blob/v2/Sections/Features.md.md#templates)
 
 ###### Response
 <pre>
@@ -58,7 +58,7 @@ Retrieve SMS Notification Templates
 * `GET api/notification/sms/templates` will return all SMS notification templates configured in the PayLink portal
 
 ###### Related Reading
-* [How to Create Notification Templates](https://github.com/PayLink/Portal/blob/v2/Features.md#templates)
+* [How to Create Notification Templates](https://github.com/PayLink/Portal/blob/v2/Sections/Features.md#templates)
 
 ###### Response
 <pre>
