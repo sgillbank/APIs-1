@@ -59,7 +59,7 @@ Please note that **bold** fields are required fields, the **Payment** object *or
 
 ###### Related Reading
 * [Which Transaction Type to Use](https://github.com/PayLink/Portal/wiki/Transaction-Types)
-* [How to Specify Email or SMS Template](https://github.com/PayLink/APIs/wiki/Email-and-SMS-Templates)
+* [How to Specify Email or SMS Template](Email%20and%20SMS%20Templates.md)
 
 ###### Response
 <pre>
@@ -143,7 +143,7 @@ Please note that **bold** fields are required fields, the **Payment** object *or
 
 ###### Related Reading
 * [Which Transaction Type to Use](https://github.com/PayLink/Portal/wiki/Transaction-Types)
-* [How to Specify Email or SMS Template](https://github.com/PayLink/APIs/wiki/Email-and-SMS-Templates)
+* [How to Specify Email or SMS Template](Email%20and%20SMS%20Templates.md)
 
 
 ###### Response
