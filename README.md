@@ -51,7 +51,7 @@ as child elements of other objects.
 ### WalletLinks
 * [Create a WalletLink](Sections/WalletLinks.md#create-a-walletlink)
 * [Retrieve a WalletLink URL](Sections/WalletLinks.md#retrieve-a-walletlink-url)
-* [Cancel a WalletLink](https://github.com/PayLink/APIs/blob/master/Sections/WalletLinks.md#cancel-a-walletlink)
+* [Cancel a WalletLink](Sections/WalletLinks.md#cancel-a-walletlink)
 
 ### Notifications
 * [Resend PayLink Notification Email](Sections/Notifications.md#resend-paylink-notifiation-email)
