@@ -22,5 +22,5 @@ If no template name is provided the default as defined in the PayLink portal wil
 ## Additional APIs
 There are two additional APIs provided for Email and SMS Templates, you may find them here:
 
-* [Retrieve Email Templates](https://github.com/PayLink/APIs/blob/v2/Sections/Notifications.md#retrieve-email-notification-templates)
-* [Retrieve SMS Templates](https://github.com/PayLink/APIs/blob/v2/Sections/Notifications.md#retrieve-sms-notification-templates)
+* [Retrieve Email Templates](Notifications.md#retrieve-email-notification-templates)
+* [Retrieve SMS Templates](Notifications.md#retrieve-sms-notification-templates)
