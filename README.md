@@ -23,7 +23,7 @@ Authentication
 --------------
 PayLink clients require a PayFabric *Security Token* to authenticate with APIs.
 
-We have a [detailed guide](Sections/Authentication.md#security-token) in our PayFabric documentation for creating a new *Security Token*.
+We have a [detailed guide](https://github.com/PayFabric/APIs/blob/v2/Sections/Authentication.md#security-token) in our PayFabric documentation for creating a new *Security Token*.
 
 
 Handling Exceptions
