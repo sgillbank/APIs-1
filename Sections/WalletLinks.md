@@ -25,10 +25,10 @@ Create a WalletLink
 }
 </pre>
 
-Please note that **bold** fields are required fields and all others are optional. For more information and descriptions on available fields please see our [wiki page](https://github.com/PayLink/APIs/wiki/API-Objects#walletlink-document).
+Please note that **bold** fields are required fields and all others are optional. For more information and descriptions on available fields, click [here](../JSON%20Objects.md#walletlink-document).
 
 ###### Related Reading
-* [How to Specify Email or SMS Template](https://github.com/PayLink/APIs/wiki/Email-and-SMS-Templates)
+* [How to Specify Email or SMS Template](Email%20and%20SMS%20Templates.md)
 
 ###### Response
 <pre>
